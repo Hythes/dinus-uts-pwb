@@ -1,0 +1,94 @@
+@font-face {
+    font-family: notoSans;
+    src: url(../font/NotoSans.ttf);
+}
+@font-face {
+    font-family: pinkSans;
+    src: url(../font/PinkSans.ttf);
+}
+
+body{
+    font-family: notoSans;
+    margin: 0;
+    background-color: #fefefe;
+    padding: 0;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.kategori{
+    font-family: pinkSans;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+    margin-bottom: 10px;
+}
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: block;
+}
+.card{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #ccc;
+
+}
+.card .foto{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .kategori{
+        font-size: 100px;
+    }
+    .row{
+        display: block;
+    }
+}
+.navbar{
+    background-color:#efefef;
+    padding: 0px 40px ;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px 4px #ccc;
+    
+}
+.list li{
+    display: inline-block;
+    vertical-align:middle;
+    margin-top: 10px;
+    align-items: center;
+    margin-right: 10px;
+    
+}
+.list li a{
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.list .item .active {
+    padding: 5px;
+    border-radius: 5px;
+    color: blue;
+    text-decoration: none;
+}
+
+.container .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
